@@ -4,14 +4,14 @@ import java.util.*;
 public class q1 {
     public static void main(String[] args) {
         int n, m;
-        Scanner in = new Scanner(System.in);
-        n = in.nextInt();
-        m = in.nextInt();
-        in.nextLine(); 
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        m = sc.nextInt();
+        sc.nextLine(); 
         String temp;
         String[] crops = new String[n];
 
-        for (int i=0;i<n;i++) crops[i]=in.nextLine().trim();
+        for (int i=0;i<n;i++) crops[i]=sc.nextLine().trim();
         
         char[][] crops_mat = new char[n][m];
         for(int i=0; i<n; i++)

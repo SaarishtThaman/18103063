@@ -7,10 +7,9 @@ public static void main(String[] args) {
                 while (x<=100) {
                     x = x + 1;
                     System.out.print(x + " ");
-                    if (x % 10 == 0)
-                    {   System.out.println();
-                        System.out.println("10 second message");
-                        
+                    if (x % 10 == 0) {
+                        System.out.println();
+                        System.out.println("10s passed");
                     }
                     try {
                         Thread.sleep(1000);

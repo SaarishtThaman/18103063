@@ -107,28 +107,28 @@ public class q5_1 {
 
     public static void main(String[] args) {
 		
-        Scanner obj = new Scanner (System.in);
+        Scanner sc = new Scanner (System.in);
         System.out.println("No. of elements in first set:");
-        int n1=obj.nextInt();
+        int n1=sc.nextInt();
         System.out.println("No. of elements in second set:");
-        int n2=obj.nextInt(), count=0;
+        int n2=sc.nextInt(), count=0;
         int ref[]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int []arr1= new int[n1];
         int []arr2= new int[n2];
         System.out.println("Elements of first set:");
         for(int i=0; i<n1; i++) {
-            arr1[i] = obj.nextInt();
+            arr1[i] = sc.nextInt();
             while(arr1[i]<0 || arr1[i]>10) {
                 System.out.println("Not a valid choice. Enter a number between 0 and 10");
-                arr1[i]=obj.nextInt();
+                arr1[i]=sc.nextInt();
             }
         }
         System.out.println("Elements of second set:");
         for(int i=0; i<n2; i++) {
-            arr2[i] = obj.nextInt();
+            arr2[i] = sc.nextInt();
             while(arr2[i]<0 || arr2[i]>10) {
                 System.out.println("Not a valid choice. Enter a number between 0 and 10");
-                arr2[i]=obj.nextInt();
+                arr2[i]=sc.nextInt();
             }
         }
 		long start = System.currentTimeMillis();

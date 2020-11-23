@@ -2,31 +2,27 @@ import java.util.Scanner;
 
 public class q1 {
 
-    static void comp(String s1s, String s2s) {
-        int n1 = s1s.length();
-        int n2 = s2s.length();
-        char[] s1 = s1s.toCharArray();
-        char[] s2 = s2s.toCharArray();
+    static void comp(String s1, String s2) {
         int cmp = 0;
         for(int i=0;i<n1 && i<n2;i++) {
-            if(s1[i]<s2[i]) {
+            if(s1.charAt(i)<s2.charAt(i)) {
                 cmp=-1;break;
             }
-            if(s1[i]>s2[i]) {
+            if(s1.charAt(i)>s2.charAt(i)) {
                 cmp=1;break;
             }
         }
         if(cmp==-1) {
-            System.out.println(s1s+" < "+s2s);
+            System.out.println(s1+" < "+s2);
         }
         else if(cmp==1) {
-            System.out.println(s2s+" < "+s1s);
+            System.out.println(s2+" < "+s1);
         }
         else {
-            if(n1>n2) {
+            if(s1.length()>s2.length()) {
                 System.out.println(s2s+" < "+s1s);
             }
-            else if(n2>n1) {
+            else if(s2.length()>s1.length()) {
                 System.out.println(s1s+" < "+s2s);
             }
             else {
@@ -40,6 +36,7 @@ public class q1 {
         System.out.println("Enter the two strings:");
         String s1 = sc.nextLine();
         String s2 = sc.nextLine();
+        sc.close();
         comp(s1,s2);
     }
 }
