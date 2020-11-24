@@ -83,7 +83,7 @@ public class q5_1 {
             System.out.print(" " + ours[i]);
     }
 
-    public static int[] finetune(int[] a1) {
+    public static int[] reduce(int[] a1) {
         int n=a1.length;
         int ref[]= new int [11];
         for(int i=0; i<11; i++)
@@ -132,8 +132,8 @@ public class q5_1 {
             }
         }
 		long start = System.currentTimeMillis();
-        arr1=finetune(arr1); //sort and handle repetitions
-        arr2=finetune(arr2);
+        arr1=reduce(arr1); //sort and handle repetitions
+        arr2=reduce(arr2);
         union(arr1, arr2);
         intersection(arr1, arr2);
         complement(arr1, ref);

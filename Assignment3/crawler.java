@@ -183,9 +183,9 @@ public class crawler {
 
     public static void main(String[] args) {
         try {
-            linksFile = new FileWriter("Assignment_3\\links.csv");
-            textFile = new FileWriter("Assignment_3\\text.csv");
-            nonHtmlLinksFile = new FileWriter("Assignment_3\\nonHtmlLinks.csv");
+            linksFile = new FileWriter("links.csv");
+            textFile = new FileWriter("text.csv");
+            nonHtmlLinksFile = new FileWriter("nonHtmlLinks.csv");
 
             String row = "Tag ,Text\r\n";
             textFile.write(row);
